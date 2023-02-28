@@ -22,14 +22,14 @@ import com.cognizant.framework.Status;
 
 import pages.SureshManemPage;
 
-public class SureshManemComponents extends ReusableLibrary {
+public class TestComponenets extends ReusableLibrary {
 	/**
 	 * Constructor to initialize the component library
 	 * 
 	 * @param scriptHelper The {@link ScriptHelper} object passed from the
 	 *                     {@link DriverScript}
 	 */
-	public SureshManemComponents(ScriptHelper scriptHelper) {
+	public TestComponenets(ScriptHelper scriptHelper) {
 		super(scriptHelper);
 	}
 

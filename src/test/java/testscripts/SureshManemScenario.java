@@ -24,7 +24,7 @@ import com.cognizant.framework.selenium.SeleniumTestParameters;
 public class SureshManemScenario extends TestConfigurations {
 
 	@Test(dataProvider = "ChromeHeadless", dataProviderClass = TestConfigurations.class)
-	public void SureshManemTest(SeleniumTestParameters testParameters) {
+	public void sureshManemTest(SeleniumTestParameters testParameters) {
 
 		testParameters.setCurrentTestDescription("Test for Suresh Manem website test");
 
