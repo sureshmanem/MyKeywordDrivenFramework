@@ -36,6 +36,16 @@ public class TestConfigurations extends KeywordTestCase {
 		return new Object[][] { { new SeleniumParametersBuilders(currentScenario, currentTestcase)
 				.testInstance("Instance1").executionMode(ExecutionMode.LOCAL).browser(Browser.CHROME_HEADLESS).build() } };
 	}
+	
+	@DataProvider(name = "Chrome")
+	public Object[][] desktopBrowserChrome(Method currentMethod) {
+		currentScenario = currentMethod.getDeclaringClass().getSimpleName();
+		currentTestcase = currentMethod.getName();
+		currentTestcase = currentTestcase.substring(0, 1).toUpperCase().concat(currentTestcase.substring(1));
+
+		return new Object[][] { { new SeleniumParametersBuilders(currentScenario, currentTestcase)
+				.testInstance("Instance1").executionMode(ExecutionMode.LOCAL).browser(Browser.CHROME).build() } };
+	}
 
 	@DataProvider(name = "NativeAndroid")
 	public Object[][] mobileDevice(Method currentMethod) {

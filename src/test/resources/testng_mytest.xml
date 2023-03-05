@@ -6,7 +6,7 @@
 			<class name="testscripts.SureshManemScenario">
 				<methods>
 					<include name="sureshManemTest"></include>
-					<include name="testForLoginWithNewlyRegisteredUser"></include>
+					<exclude name="testForLoginWithNewlyRegisteredUser"></exclude>
 					<exclude name="testForInvalidLogin"></exclude>
 				</methods>
 			</class>
